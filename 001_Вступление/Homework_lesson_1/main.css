@@ -3,11 +3,17 @@ body {
     padding: 0;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
 }
 
 .container {
     border: 1px solid black;
     width: 850px;
+    margin: 0 auto;
 }
 
 .display-grid {
