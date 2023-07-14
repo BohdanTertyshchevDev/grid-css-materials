@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.green {
+    background-color: green;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "sidebar . ."
+    "footer footer footer";
+}
+
+.container div:nth-child(1) {
+    grid-area: header;
+}
+
+.container div:nth-child(2) {
+    grid-area: main;
+}
+
+.container div:nth-child(3) {
+    grid-area: sidebar;
+}
+
+.container div:nth-child(4) {
+    grid-area: footer;
+}
+
+.main-container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "logo-block menu menu"
+    "header header header"
+    "content content content"
+    "footer footer footer";
+}
+
+.main-container div:nth-child(1) {
+    grid-area: logo-block;
+}
+
+.main-container div:nth-child(2) {
+    grid-area: menu;
+}
+
+.main-container div:nth-child(3) {
+    grid-area: header;
+}
+
+.main-container div:nth-child(4) {
+    grid-area: content;
+}
+
+.main-container div:nth-child(5) {
+    grid-area: footer;
+}
+
+
+.main-container-chenge {
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "menu menu logo-block"
+    "header header header"
+    "content content content"
+    "footer footer footer";
+    justify-items: center;
+}
+
+.main-container-chenge div:nth-child(1) {
+    grid-area: logo-block;
+}
+
+.main-container-chenge div:nth-child(2) {
+    grid-area: menu;
+}
+
+.main-container-chenge div:nth-child(3) {
+    grid-area: header;
+}
+
+.main-container-chenge div:nth-child(4) {
+    grid-area: content;
+}
+
+.main-container-chenge div:nth-child(5) {
+    grid-area: footer;
+}
+
