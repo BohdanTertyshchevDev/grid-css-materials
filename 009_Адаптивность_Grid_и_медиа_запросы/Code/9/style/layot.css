@@ -128,25 +128,30 @@
 .grid-animation div:nth-child(4){
     grid-area: D;
 }
-@keyframes gridAnimation{
-    0%{
-        grid-template-areas: 
-        "A B"
-        "C D";        
-    }
-    25%{
-        grid-template-areas: 
-        "A C"
-        "B D"; 
-    }
-    50%{
-        grid-template-areas: 
-        "A D"
-        "C B"; 
-    }
-    100%{
-        grid-template-areas: 
-        "B A"
-        "D C"; 
+
+@media(min-width:960px){
+    @keyframes gridAnimation{
+        0%{
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows:repeat(2, auto);
+            grid-template-areas: 
+            "A B"
+            "C D";        
+        }
+        25%{
+            grid-template-areas: 
+            "A C"
+            "B D"; 
+        }
+        50%{
+            grid-template-areas: 
+            "A D"
+            "C B"; 
+        }
+        100%{
+            grid-template-areas: 
+            "B A"
+            "D C"; 
+        }
     }
 }
