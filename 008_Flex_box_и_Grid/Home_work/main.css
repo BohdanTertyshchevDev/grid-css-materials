@@ -95,32 +95,125 @@ h1 {
 
 .flex-margin {
     border: 1px solid black;
-    margin: 0 auto;
-    width: 450px;
-    /* height: 200px; */
+    /* margin: 0 auto; */
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 480px;
+    margin-bottom: 50px;
 }
-
-/* .flex-margin .red,.flex-margin .yellow {
-    width: 100px;
-    height: 50px;
-}
-
-.flex-margin .blue, .flex-margin .brown {
-    width: 150px;
-    height: 50px;
-}
-
-.flex-margin .green, .flex-margin .orange {
-    width: 200px;
-    height: 50px;
-} */
 
 .flex-margin div {
-    text-align: center;
-    padding: 20px;
     width: 150px;
-    margin: 15px;
+    height: 50px;
+    margin: 5px;
 }
+
+.flex-margin :nth-child(1) {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0px;
+}
+
+.flex-margin :nth-child(2) {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.flex-margin :nth-child(3) {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.flex-margin :nth-child(4) {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.flex-margin :nth-child(5) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.flex-margin :nth-child(6) {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.grid-margin {
+    border: 1px solid black;
+    /* margin: 0 auto; */
+    display: inline-grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 50px);
+    grid-gap: 5px;
+}
+
+.column-grid {
+    width: 100px;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.column-flex {
+    display: flex;
+    width: 100px;
+    border: 1px solid black;
+    flex-direction: column;
+}
+
+.flex-red {
+    height: 50px;
+}
+
+.flex-blue {
+    height: auto;
+}
+
+.flex-green {
+    height: 50px;
+}
+
+.rows-grid {
+    display: grid;
+    grid-template-columns: 50px auto 50px auto;
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.rows-flex {
+    display:flex;
+    width: 300px;
+    height: 50px;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.rows-flex :nth-child(1) {
+    width: 50px;
+}
+    
+
+
+.rows-flex :nth-child(2) {
+    width: 100px;
+}
+
+.rows-flex :nth-child(3) {
+    width: 50px;
+}
+
+
+.rows-flex :nth-child(4) {
+    width: 100px;
+}
+
